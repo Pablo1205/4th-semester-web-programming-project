@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Diets</title>
+        <script src="../JSfile/diet_weightloss.js"></script>
+        <link rel="stylesheet" href="../CSSfile/diets_weightloss.css">
+   </head>
+   
+  <body>
+    <header>
+      <h1>Sports and Diets</h1>
+      <!-- MENU -->
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="deroulant"><a href="diets.html">Diets&ensp;</a>
+            <ul class="sous">
+              <li><a href="diets_summer.html">Summer</a></li>
+              <li><a href="diets_weightloss.html">Weight loss</a></li>
+              <li><a href="diets_bootylegs.html">Booty and legs</a></li>
+            </ul>
+          </li>
+          <li><a href="imc.html">BMI</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero" >
+      <h1>Weight loss</h1>
+    </div>
+    <br>
+    <!--MAIN CONTENT--> 
+    <div class="content">
+
+      <div>
+        <h2>Meet your dietitian!</h2>
+        <br>
+        <p class="para1">In order to lose weight, you need to meet a good dietitian.<br><br>
+          That's why Sport and diet provides you two dietitians to help you.<br><br>
+          They will teach you how to eat better and healthier.<br><br>
+          Here is a little presentation of our two professionnals.
+          If you want to meet them you simply have to register yourself.
+          First meeting is free, so don't hesitate anymore !<br><br>
+        </p>
+      </div>
+
+      <br>
+      <!-- Block with the two dietitician-->
+      <div class="bigbloc">
+        <div class="blocdietetitian">
+          <div class="flex">
+            <div>
+              <h3>Julie HAVERD</h3>
+              <p>Dietitian</p>
+            </div>
+            <div class="photo">
+              <img src="../DESIGNfile/julie.jpg" class="profile_picture" alt="">
+            </div>
+          </div>
+          <br>
+          <p>"Hi, I'm Julie.
+            Are you trying to lose weight without succeeding?
+            Have you ever tried ten diets without losing a single gram?
+            I am the dietitian you need! My method?
+            I get to know you, I study your eating habits and create a program especially for you.
+            My diets are not based on deprivation, but on a food balance.
+            What does that mean?
+            Simply that I will teach you how to eat healthier, without limitng the amount on your plate so that you don't feel like starving!"
+          </p>
+          <br>
+        </div> 
+
+        <div class="blocdietetitian">
+          <div class="flex">
+            <div>
+              <h3>Alex DEBERG</h3>
+              <p>Dietitian for athlets</p>
+            </div>
+            <div class="photo">
+              <img src="../DESIGNfile/Alex.jpg" class="profile_picture" alt="">
+            </div>
+          </div>
+          <br>
+          <p>"Are you an athlete and you need a special diet?
+            I am the dietitian you need.
+            I study your sports program to offer you a meal schedule adapted to your daily life and your nutritional needs.
+            My asset?
+            I only offer diets without dietary supplements.
+            I want you to eat healthy.
+            Your health is my priority!"
+          </p>
+          <br>
+        </div>
+      </div>
+
+      <br> 
+      <!-- Block for the three proposed programs-->
+      <h2>Other diets</h2>
+      <br>
+      <p class="para1">If you think that you don't need a dietitian, Sport and Diet also have three different programs for you that you can test alone :</p>
+
+      <br>
+
+      <div class="bigbloc2">
+        <div class="bloc3">
+          <div>
+            <div class="photo2">
+              <img src="../DESIGNfile/d10.jpg" class="profile_picture" alt="">
+            </div>
+            <h3>Program 10 D</h3>
+            <p>Ten days to lose maximum weight</p>
+          </div>
+          <br>
+          <p>Ideal when the summer holidays arrive without warning.
+            This program is nevertheless very hard and very strict.
+            But it is still affordable for everyone.
+            Indeed, it can also be the first step of a long-lasting diet.
+            This is a restrictive diet for the first five days followed by a rebalancing of the diet.
+            We will let you discover it for a price of only $9.95.
+          </p>
+          <br>
+        </div> 
+
+        <div class="bloc3">
+          <div>
+            <div class="photo2">
+              <img src="../DESIGNfile/beginner.jpg" class="profile_picture" alt="">
+            </div>
+            <h3>Beginner</h3>
+            <p >Learn how to practice a sport regularly</p>
+          </div>
+          <br>
+          <p>This program must be preceded by 10 D because it requires a good food balance.
+            In this pack, you will discover many sports that help you lose weight, you will benefit from a sports calendar to help you in your weight loss as well as a guide for your meals.
+            You will also find a notebook that will allow you to follow your progress, the number of calories absorbed and eliminated.
+            You can try it for $49.99.
+          </p>
+          <br>
+        </div>
+
+        <div class="bloc3">
+          <div>
+            <div class="photo2">
+              <img src="../DESIGNfile/advanced.jpg" class="profile_picture" alt="">
+            </div>
+            <h3>Advanced</h3>
+            <p>For intermediate and high levels</p>
+          </div>
+          <br>
+          <p>This program must also be done after 10 D.
+            It is for active people who are looking for more muscle.
+            This is a stricter diet that must be followed by meal guides and sports exercise planning.
+            It is for only one month.
+            Don't forget to drink and take showers !
+            But first and foremore : good luck!
+            It’s priced at $25.99.
+          </p>
+          <br>
+        </div>
+      </div>
+
+    </div>
+
+    <br> 
+    <!-- Block for the table of a typical week-->
+
+    <h2>Typical week</h2>
+    <br>
+    <p class="para1">To follow your own program, here is what a typical week should look like : </p>
+    <br>
+    
+
+    <button id="Btn" type="button" class="btn" onclick="loadTableData()">Show Typical week </button>
+    <button type="button" class="btn" onclick= "removeAll()">Stop showing</button>
+
+    <br><br>
+    <div class="table_scroll">
+      <table id="type_week_table" class="typeweektable">
+        <colgroup>
+          <col style="background-color:rgb(255, 226, 96)">
+        </colgroup>
+        <thead>
+          <tr>
+            <th style="background-color:rgb(255, 161, 73)">Meals / Activity</th>
+            <td style="background-color:rgb(255, 161, 73)"><B>Monday</B></td>
+            <td style="background-color:rgb(255, 161, 73)"><B>Tuesday</B></td>
+            <td style="background-color:rgb(255, 161, 73)"><B>Wednesday</B></td>
+            <td style="background-color:rgb(255, 161, 73)"><B>Thursday</B></td>
+            <td style="background-color:rgb(255, 161, 73)"><B>Friday</B></td>
+            <td style="background-color:rgb(255, 161, 73)"><B>Saturday</B></td>
+            <td style="background-color:rgb(255, 161, 73)"><B>Sunday</B></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="breakfast"></tr>
+          <tr id="lunch"></tr>
+          <tr id="meal"></tr>
+          <tr id="dinner"></tr>
+          <tr id="sport_program"></tr>
+        </tbody>
+      </table>
+    </div>
+    <br> 
+
+    <!--Block for the proposed videos-->
+    <h2>Videos</h2>
+      <br>
+      <p class="para1">Find here some Youtube videos to discover what type of sport you can do if you are a novice :</p>
+      <br>
+      <div class="video">
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/bleOTMDa3_4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <div class="video">
+          <iframe width="400" height="200" src="https://www.youtube.com/embed/3p8EBPVZ2Iw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <div class="video">
+          <iframe width="400" height="200" src="https://www.youtube.com/embed/oNMDnFBp5YE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <p class="para1">Find here some Youtube videos to discover what type of sport you can do if you are a at an advanced level :</p>      
+      <br>
+      <div class="video">
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/UrOg0YZ1Diw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <div class="video">
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/2MoGxae-zyo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <div class="video">
+        <iframe width="400" height="200" src="https://www.youtube.com/embed/lxwhP0LTrOY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+
+      <!--FOOTER-->
+
+      <footer>
+        <ul>
+          <li>Located in : 30 - 32 avenue de la République, 94800 Villejuif</li>
+          <li><a href="./HTMLfile/aboutus.html" style="color: rgb(255, 145, 0);">Contact us</a></li>
+          <li>Follow us on : </li>
+          <li><a href="https://www.facebook.com/"><img src="../DESIGNfile/Facebook.png" width="50" height="50" alt="facebook" /></a></li>       
+          <li><a href="https://www.instagram.com/?hl=fr"><img src="../DESIGNfile/Instagram.png" width="50" height="50" alt="instagram" /></a> </li>       
+          <li> <a href="https://twitter.com/?lang=fr"><img src="../DESIGNfile/Twitter.png" width="50" height="50" alt="twitter" /></a>  </li>     
+          <li><a href="https://www.efrei.fr/"><img src="../DESIGNfile/Efrei.png" width="45" height="45" alt="efrei" /></a></li>
+        </ul>
+        <h1>Sport and Diet ®</h1>
+      </footer>
+
+  </body>
+</html>

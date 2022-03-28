@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>BMI</title>
+        <script src="../JSfile/imc.js"></script>
+        <link  href="../CSSfile/imc.css" rel="stylesheet">
+   </head>
+   
+  <body>
+    <header>
+      <h1>Sports and Diets</h1>
+      <!-- MENU en tête -->
+    <nav id="menu">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="deroulant"><a href="diets.html">Diets&ensp;</a>
+          <ul class="sous">
+            <li><a href="diets_summer.html">Summer</a></li>
+            <li><a href="diets_weightloss.html">Weight loss</a></li>
+            <li><a href="diets_bootylegs.html">Booty and legs</a></li>
+          </ul>
+        </li>
+        <li><a href="imc.html">BMI</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="aboutus.html">About us</a></li>
+      </ul>
+    </nav>
+
+    <div class="photo">
+      <div class="h1_line" ><h1>Body Mass Index</h1></div>
+    </div>
+    </header>
+
+    <div class="conteneur">
+
+      <!--FORM>-->
+      <br> <br>
+      <h2> My free BMI computer ! </h2>
+      <p>Determine your BMI and your ideal weight </p> <br>
+
+      <form name="newUser" class="box"  id="new-user" onsubmit="return false">
+        <div class="container">
+          <br>
+
+          <ol id="label">
+            <li>
+                <label >  <b> Gender : </b></label>
+                <input type="radio" id="male" name="gender" value="male" required="">
+                <label style="color:black" >Male </label>
+                <input type="radio" id="female" name="gender" value="female" required="">
+                <label style="color:black">Female </label>
+                <input type="radio" id="other" name="gender" value="other" required="">
+                <label style="color:black">Other </label>
+            </li>
+            <li>
+                <label ><b> My height :</b> </label>
+                <input id="height" type="number" name="height" placeholder="Ex : 165" required="" min="130"> cm 
+            </li>
+            <li>
+                <label ><b>My age : </b> </label>
+                <input id="age" type="number" name="age" placeholder="Ex : 20" required="" min="18"> years old
+            </li>
+            <li>
+                <label ><b> My weight : </b> </label>
+                <input id="weight" type="number" name="weight" placeholder="Ex : 65" required="" min="45" > kg
+            </li>
+            <li>
+                <label ><b> My ideal weight </b> </label>
+                <input id="id_weight" type="number" name="id_weight" placeholder="Ex : 60" required="" min="45"> kg
+            </li>
+            <li>
+              <label  ><b> My bone sturcture : </b></label>
+              <select name="Bone_structure">
+                <option value="fine">Fine</option>
+                <option value="heavy">Heavy</option>
+                <option value="light">light</option>
+              </select>
+            </li>
+          </ol>
+
+          <div class="Buttons">
+            <br>
+            <button type="submit" class="btn" onclick="addElem()"><b>My result</b></button>
+          </div>
+        </div>
+      </form>
+    </div> 
+
+
+    <!--DYNAMICAL TABLE -->
+    <main>
+      <div id="result" >
+        <table class="datatable">
+          <tbody>
+            <tr>
+              <th>Gender</th>
+              <th>Height</th>
+              <th>Weight</th>
+              <th>Ideal Weight</th>
+              <th>Bone structure</th>
+              <th>Your BMI</th>
+            </tr>
+          </tbody>
+        </table>
+      
+        <br>
+      </div>
+    </main>
+
+
+    <br>
+    <!--FOOTER-->
+    <footer>
+      <ul>
+        <li>Located in : 30 - 32 avenue de la République, 94800 Villejuif</li>
+        <li><a href="../HTMLfile/aboutus.html" style="color: rgb(255, 145, 0);">Contact us</a></li>
+        <li>Follow us on : </li>
+        <li><a href="https://www.facebook.com/"><img src="../DESIGNfile/Facebook.png" width="50" height="50" alt="facebook" /></a></li>       
+        <li><a href="https://www.instagram.com/?hl=fr"><img src="../DESIGNfile/Instagram.png" width="50" height="50" alt="instagram" /></a> </li>       
+        <li> <a href="https://twitter.com/?lang=fr"><img src="../DESIGNfile/Twitter.png" width="50" height="50" alt="twitter" /></a>  </li>     
+        <li><a href="https://www.efrei.fr/"><img src="../DESIGNfile/Efrei.png" width="45" height="45" alt="efrei" /></a></li>
+      </ul>
+      <h1>Sport and Diet ®</h1>
+    </footer>
+
+
+  </body>
+</html>

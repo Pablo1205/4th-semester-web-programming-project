@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Registration</title>
+      <script src="../JSfile/registration.js"></script>
+      <link rel="stylesheet" href="../CSSfile/registration.css"/> 
+    </head>
+   
+  <body>
+    <header>
+      <h1>Sports and Diets</h1>
+      <!-- MENU en tête -->
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="deroulant"><a href="diets.html">Diets&ensp;</a>
+            <ul class="sous">
+              <li><a href="diets_summer.html">Summer</a></li>
+              <li><a href="diets_weightloss.html">Weight loss</a></li>
+              <li><a href="diets_bootylegs.html">Booty and legs</a></li>
+            </ul>
+          </li>
+          <li><a href="imc.html">BMI</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero" >
+      <h1>Registration !</h1>
+    </div>
+
+    <!--MAIN CONTENT-->
+    <div class="conteneur">
+
+        <!--FORM>-->
+      <br>
+      <p><b>Complete this form :</b></p> <br>
+
+      <form name="newUser"  class="box" id="new-user" onsubmit="return false">
+        <div class="container">
+          <br>
+
+          <p id="title_form"> Identity</p> <br>
+          <ol id="label" >
+            <li >
+              <label > <b> First Name : </b></label>
+              <input id="fname" type="text" name="firstname" placeholder="First name"> 
+            </li>
+            <li >
+              <label  >  <b>Last Name :</b> </label>
+              <input id="lname" type="text" name="lastname" placeholder="Last name">
+            </li>
+            <li>
+              <label>  <b>Gender : </b></label>
+              <input  type="radio" id="male" name="gender" value="male" required="">
+              <label style="color:black">Male</label>
+              <input  type="radio" id="female" name="gender" value="female" required="">
+              <label style="color:black">Female</label>
+              <input type="radio" id="other" name="gender" value="other" required="">
+              <label style="color:black" >Other</label>
+            </li>
+            <li>
+              <label > <b>Email : </b></label>
+              <input id="mail" type="email" name="email" placeholder="E-Mail" required="">
+            </li>
+          </ol>
+
+          <br>
+            <p id="title_form"> Adress</p>
+            <br>
+            <ol id="label">
+              <li >
+                <label  > <b>Adress : </b></label>
+                <input id="ad" type="text" name="adress" placeholder="Adress"> 
+              </li>
+              <li >
+                <label  ><b>Zipcode : </b> </label>
+                <input  id="zip" type="number" name="zipcode" placeholder="Zipcode">
+              </li>
+                <li >
+                <label  ><b>City : </b></label>
+                <input id="city" type="text" name="city" placeholder="City"> 
+              </li>
+            </ol>
+            
+            <br>
+            <p id="title_form" >Choose what diet you want to follow : </p>
+            <br>
+            <label id="label" ><b> Your choice : </b></label>
+            <select  id="chd" name="ChooseDiet" onchange="getChd();">
+              <option value="Summer">Summer</option>
+              <option value="wloss">Weight loss</option>
+              <option value="bootyleg">Booty and legs</option>
+            </select>
+          <br>
+
+          <div class="Buttons">
+            <br>
+            <button type="submit" class="btn" onclick="Va()"><b>Submit</b></button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <br><br><br>
+        <!--FOOTER-->
+    <footer>
+      <ul>
+        <li>Located in : 30 - 32 avenue de la République, 94800 Villejuif</li>
+        <li><a href="../HTMLfile/aboutus.html" style="color: rgb(255, 145, 0);">Contact us</a></li>
+        <li>Follow us on : </li>
+        <li><a href="https://www.facebook.com/"><img src="../DESIGNfile/Facebook.png" width="50" height="50" alt="facebook" /></a></li>       
+        <li><a href="https://www.instagram.com/?hl=fr"><img src="../DESIGNfile/Instagram.png" width="50" height="50" alt="instagram" /></a> </li>       
+        <li> <a href="https://twitter.com/?lang=fr"><img src="../DESIGNfile/Twitter.png" width="50" height="50" alt="twitter" /></a>  </li>     
+        <li><a href="https://www.efrei.fr/"><img src="../DESIGNfile/Efrei.png" width="45" height="45" alt="efrei" /></a></li>
+      </ul>
+      <h1>Sport and Diet ®</h1>
+    </footer>
+  
+
+  </body>
+</html>

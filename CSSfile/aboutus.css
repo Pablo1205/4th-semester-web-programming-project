@@ -1,0 +1,198 @@
+/* FROM PROJECT.CSS */
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Squada+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana;
+  }
+ 
+  body {
+      background-color: #fafafa;
+  }
+  main, header {
+    margin: 5px;
+  }
+  
+  main .box {
+      overflow-x: scroll;
+  }
+
+  /*MENU*/
+  nav{
+      width: 100%;
+      margin: 0 auto;
+      background-color: #fafafa;
+      position: sticky;
+      top: 0px;
+  }
+  
+  /*Delete the puce in front of our list*/
+  nav ul{
+      list-style-type: none;
+  }
+  
+  /*have our list in a single line and add an espace between the onglet*/
+  nav ul li{
+      float: left;
+      width: 20%;
+      text-align: center;
+      position: relative;
+  
+  }
+  
+  nav ul::after{
+      content: "";
+      display: table;
+      clear: both;
+  }
+  /*delete the line above the text and when we click it's all the block and not just the text that is clickable*/
+  nav a{
+      display: block;
+      text-decoration: none;
+      color: black;
+      border-bottom: 2px solid transparent;
+      padding: 10px 0px;
+  }
+  
+  /*The thing orange when the user survole the menu*/
+  nav a:hover{
+      color: orange;
+      border-bottom: 2px solid gold;
+  }
+  
+  /*We have our menu but we have to occupy of what we have inside of Diets*/
+  .sous{
+      display: none;
+      box-shadow: 0px 1px 2px #CCC;
+      position: absolute;
+      width: 100%;
+      z-index: 1000;
+      background : #fafafa;
+  }
+  nav > ul li:hover .sous{
+      display: block;
+  }
+  .sous li{
+      float: none;
+      width: 100%;
+      text-align: left;
+  }
+  .sous a{
+      padding: 10px;
+      border-bottom: none;
+  }
+  .sous a:hover{
+      border-bottom: none;
+      background-color: RGBa(200,200,200,0.1);
+  }
+  .deroulant > a::after{
+      content:" ▼";
+      font-size: 12px;
+  }
+  
+
+/* SPECIFIC FOR ABOUT US PAGE */
+.datatable {
+    background-color: rgb(255, 255, 255);
+    border: thin solid rgb(255, 165, 0);
+    /*font-weight: bold;*/
+    margin: auto;
+    width: 60%;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important;
+}
+
+
+
+.datatable td, .datatable th {
+    text-align: center;
+    padding: 24px;
+}
+
+
+.datatable tr:not(:last-child) td, .datatable th {
+   border-bottom: 1px solid rgb(255, 165, 0); /* #ccc*/
+}
+
+.centrer {
+    text-align: center;
+}
+
+.profile_picture{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1_line{
+ 
+    font-size: 45px;
+    color :black;  
+}
+
+h1{
+    text-align: center; 
+    font-family : Pattaya; 
+    font-size: 60px; 
+    border-bottom: 12px solid #000;
+    border-color: orange;
+  }
+
+
+.title{
+    text-align: center;
+    padding: 40px;
+    display : flex; 
+    justify-content : center;
+    
+}
+
+.photo{
+  
+    height: 10%; 
+    width: 100%; 
+    background-image : url("../DESIGNfile/AboutUs.png");
+    background-repeat: repeat; /* le fond se répète dans toute les direction. (ligne facultative car option par défaut, mais comme ça coute rien de la mettre...) */
+    padding: 70px;
+    display : flex; 
+    justify-content :center;
+    text-align: center;
+    align-items :center;
+ 
+  }
+ 
+
+
+/* SPECIFIC FOR FOOTER SECTION */
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0); /*rgb(63, 167, 199)*/
+    color: white;
+    line-height: 200%;
+    font-size: 18px;
+  }
+  
+  footer h1
+  {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    line-height: 200%;
+    padding-bottom: 10px;
+  }
+
+  footer ul{
+      list-style-type: none;
+  }
+  
+  
+  

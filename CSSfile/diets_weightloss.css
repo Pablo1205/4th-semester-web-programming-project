@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Squada+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana;
+}
+
+body {
+  background-color: #fafafa;
+}
+main, header {
+  margin: 5px;
+}
+
+main .box {
+  overflow-x: scroll;
+}
+
+/*MENU*/
+nav{
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fafafa;
+  position: sticky;
+  top: 0px;
+}
+
+/*Delete the puce in front of our list*/
+nav ul{
+  list-style-type: none;
+}
+
+/*have our list in a single line and add an espace between the onglet*/
+nav ul li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  position: relative;
+
+}
+
+nav ul::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+/*delete the line above the text and when we click it's all the block and not just the text that is clickable*/
+nav a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+/*The thing orange when the user survole the menu*/
+nav a:hover{
+  color: orange;
+  border-bottom: 2px solid gold;
+}
+
+/*We have our menu but we have to occupy of what we have inside of Diets*/
+.sous{
+  display: none;
+  box-shadow: 0px 1px 2px #CCC;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background : #fafafa;
+}
+nav > ul li:hover .sous{
+  display: block;
+}
+.sous li{
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+.sous a{
+  padding: 10px;
+  border-bottom: none;
+}
+.sous a:hover{
+  border-bottom: none;
+  background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+  content:" ▼";
+  font-size: 12px;
+}
+
+
+/*special style for weightloss*/
+
+
+.hero{ /*The whole page*/
+
+  width: 100%;
+  height : 20%;
+  background-image : url('../DESIGNfile/maigrir2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding : 100px; 
+
+  display : flex; 
+  justify-content : center;
+  align-items : center;
+}
+
+
+h1{
+  text-align: center; 
+  font-family : Pattaya; 
+  font-size: 60px; 
+  border-bottom: 12px solid #000;
+  border-color: orange;
+}
+
+h2{
+  text-align: center; 
+  font-family : Squada One;
+  font-size: 45px;
+  font-weight: bold; 
+  border-bottom: 3px solid #000;
+  border-color: black;
+}
+
+h3{ 
+  font-family : verdana;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top : 20px;
+  margin-left: 10px; 
+  text-align:center;
+}
+
+h4{
+  font-family : Pattaya; 
+  font-size: 60px; 
+  padding-top : 8px;
+}
+
+
+p{
+  text-align: center;
+  font-size: 18px;
+  font-family: Roboto;
+  margin-left : 10px;
+  margin-right: 20px;
+}
+
+
+.bigbloc{
+  justify-content : space-between;
+  height : auto;
+  margin: auto;
+  width: 80%;
+  display : flex;
+}
+
+.blocdietetitian{
+  background-color: silver;
+  max-width : 420px;
+  min-height: 500px;
+  margin: auto;
+  width: 100%;
+  height : auto;
+  text-align : center;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 5px orange;
+}
+
+
+
+.photo{
+  margin-top : 20px;
+  margin-left: 100px;
+}
+
+.para1{
+  font-size: 24px;
+  font-family: Roboto;
+  text-align : center;
+}
+
+.flex{
+  display : flex;
+}
+
+.bigbloc2{
+  justify-content : space-between;
+  height : auto;
+  margin: auto;
+  width: 80%;
+  display : flex;
+}
+
+.bloc3{
+  float : left;
+  background-color: rgb(63, 167, 199);
+  max-width : 312px;
+  min-height : 563px;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 5px silver;
+  margin: auto;
+  width: 100%;
+  height : auto;
+  text-align : center;
+}
+
+.photo2{
+  text-align : center;
+  margin-top : 5px;
+}
+
+
+
+/*TYPICAL WEEK TABLE*/
+
+.table_scroll{
+  height : auto;
+  margin: auto;
+  width: 60%;
+  overflow-x: scroll;
+}
+
+.typeweektable {
+  margin-left:auto;
+  margin-right:auto;
+  background-color: rgb(255, 255, 255);
+  border: thin solid rgb(255, 165, 0);
+  /*font-weight: bold;*/
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important;
+  max-width: 3px;
+}
+
+
+
+.typeweektable td, .typeweektable th {
+  border: 1px solid rgb(255, 165, 0); /* #ccc*/
+  text-align: center;
+  padding: 24px;
+}
+
+
+.typeweektable tr:not(:last-child) td, .typeweektable th {
+ border-bottom: 1px solid rgb(255, 165, 0); /* #ccc*/
+}
+
+.centrer {
+  text-align: center;
+}
+
+
+.btn {
+  background-color:rgb(255, 166, 0);
+  color: white;
+
+  font-variant: small-caps;
+  font-family: Verdana;
+  font-size: 20px;
+  text-align: center;
+
+  border :none;
+  padding: 5px 32px;
+  
+} 
+
+/*VIDEOS*/
+.video{
+  display:block;
+  width:480px;
+  margin:0 auto 35px auto;
+}
+
+/* SPECIFIC FOR FOOTER SECTION */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(0, 0, 0); /*rgb(63, 167, 199)*/
+  color: white;
+  line-height: 200%;
+  font-size: 18px;
+}
+
+footer h1
+{
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  line-height: 200%;
+  padding-bottom: 10px;
+}
+
+
+.profile_picture{
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li{list-style-type : none;}
